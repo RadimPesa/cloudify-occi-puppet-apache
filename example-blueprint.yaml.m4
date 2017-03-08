@@ -54,6 +54,8 @@ inputs:
     type: string
   resource_tpl:
     type: string
+  os_availability_zone:
+    type: string
 
 dsl_definitions:
   occi_configuration: &occi_configuration
@@ -92,6 +94,7 @@ node_templates:
       resource_config:
         os_tpl: { get_input: os_tpl }
         resource_tpl: { get_input: resource_tpl }
+        availability_zone: { get_input: os_availability_zone }
       agent_config: *agent_configuration
       cloud_config: *cloud_configuration
       occi_config: *occi_configuration
