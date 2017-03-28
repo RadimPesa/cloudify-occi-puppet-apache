@@ -1,11 +1,11 @@
 include(example-macros.m4)dnl
-tosca_definitions_version: cloudify_dsl_1_2
+tosca_definitions_version: cloudify_dsl_1_3
 
 description: >
   This is example Blueprint to show how to interact with FedCloud OCCI and Puppet.
 
 imports:
-  - http://getcloudify.org/spec/cloudify/3.3.1/types.yaml
+  - http://getcloudify.org/spec/cloudify/4.0m4/types.yaml
   - http://getcloudify.org/spec/fabric-plugin/1.3.1/plugin.yaml
   - http://getcloudify.org/spec/diamond-plugin/1.3.1/plugin.yaml
   - https://raw.githubusercontent.com/vholer/cloudify-occi-plugin-experimental/master/plugin.yaml
